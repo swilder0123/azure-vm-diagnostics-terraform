@@ -1,0 +1,44 @@
+variable "vm_resource_group_name" {
+	type     = "string"
+	default  = "cpeast"
+}
+
+variable "virtual_machine_name" {
+	type	 = "string"
+	default  = "skw-east-sts"
+}
+
+variable "azure_location_name" {
+	type     = "string"
+	default  = "East US 2"
+}
+
+variable "storage_resource_group_name" {
+	type	 = "string"
+	default  = "cpeast"
+}
+
+variable "storage_account_name" {
+	type	 = "string"
+	default  = "cpeastdiag737"
+}
+
+variable "eventhub_resource_group_name" {
+	type     = "string"
+	default  = "azlog68081947"
+}
+
+variable "eventhub_namespace_name" {
+	type     = "string"
+	default  = "azlog68081947"
+}
+
+variable "eventhub_entity_name" {
+	type     = "string"
+	default  = "securityevents"
+}
+
+variable "eventhub_authorization_rule_name" {
+	type     = "string"
+        default  = "sendevents"
+}
