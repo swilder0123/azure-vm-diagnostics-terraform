@@ -3,7 +3,8 @@ Create Azure Diagnostics VM configuration in Terraform
 
 This is a project to allow Azure VM diagnostics to be configured via Terraform. By default, it will configure event flows to an Eventhub sink for all security events. This is meant to support SIEM ingest workflows from Azure VMs.
 
-This project makes no attempt to create or configure the Event Hub. Create an Azure Event Hub using the Standard SKU and the default configuration.
+Creation of the Event Hub via configuration this hasn't been tested. Configuring an existing Event Hub works.
+
 ## How to use this project
 You will need to have an active Azure subscription in order to use Event Hubs. In addition, the diagnostics configuration is only applicable to (Windows) virtual machines.
 In addition to copying/cloning the repo, you must take these steps:
